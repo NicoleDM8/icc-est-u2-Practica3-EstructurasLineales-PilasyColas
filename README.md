@@ -38,4 +38,4 @@ El presente proyecto tiene como objetivo la implementación y validación de est
 ---
 
 ## Control de versiones
-- **URL del Release:** [Insertar enlace aquí]
+- **URL del Release:** [https://github.com/NicoleDM8/icc-est-u2-Practica3-EstructurasLineales-PilasyColas.git]
