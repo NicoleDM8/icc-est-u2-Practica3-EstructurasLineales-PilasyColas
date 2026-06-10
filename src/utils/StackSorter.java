@@ -4,18 +4,16 @@ import java.util.Stack;
 
 public class StackSorter {
 
-    public void sortStack(Stack<Integer> stack) {
-        Stack<Integer> aux = new Stack<>();
+ public void sortStack(Stack<Integer> stack) {
+        Stack<Integer> auxStack = new Stack<>();
         while (!stack.isEmpty()) {
-            int tmp = stack.pop();
-            while (!aux.isEmpty() && aux.peek() > tmp) {
-                stack.push(aux.pop());
+            int current = stack.pop();
+            while (!auxStack.isEmpty() && auxStack.peek() > current) {
+                stack.push(auxStack.pop());
             }
-            aux.push(tmp);
+            auxStack.push(current);
         }
-        while (!aux.isEmpty()) {
-            stack.push(aux.pop());
-        }
+        while (!auxStack.isEmpty()) stack.push(auxStack.pop());
     }
 }
 
