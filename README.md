@@ -1,18 +1,28 @@
-## Getting Started
+# Práctica: Estructuras Lineales (Pilas y Colas)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descripción
+Este proyecto implementa soluciones para ejercicios clásicos de estructuras de datos utilizando Pilas (`Stack`) y Colas (`Queue`) en Java.
 
-## Folder Structure
+## Ejercicios implementados
+1. **SignValidator**: Valida si una cadena de símbolos tiene los cierres correspondientes utilizando una pila.
+2. **StackSorter**: Ordena los elementos de una pila de forma ascendente utilizando solo una pila auxiliar.
+3. **QueuePalindrome**: Determina si una palabra es palíndromo utilizando una cola para comparar el orden de los caracteres.
 
-The workspace contains two folders by default, where:
+## Cómo ejecutar
+1. Asegúrate de tener instalado Java y el entorno configurado.
+2. Compila los archivos desde la raíz del proyecto:
+   `javac app/App.java utils/*.java`
+3. Ejecuta la aplicación:
+   `java app.App`
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Salida de consola
+```text
+SignValidator:
+Resultado: true
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+StackSorter:
+Antes: [5, 1, 3]
+Despues: [1, 3, 5]
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+QueuePalindrome:
+Es 'ana' palindromo: true
